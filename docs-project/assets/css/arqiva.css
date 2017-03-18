@@ -1,0 +1,26 @@
+.topic{
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 90px !important;
+    margin-top: 45px !important;
+}
+
+.topic p{
+
+    font-size: 20px !important;
+
+}
+
+#c{
+    position: fixed !important;
+    bottom: 0px;
+    width: 100%;
+
+}
+
+pre {
+
+   border:none;
+   border-radius: 0px !important;
+
+}
