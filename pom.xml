@@ -23,7 +23,7 @@
                 <version>1.0.0-SNAPSHOT</version>
 
                 <configuration>
-                    <outputDirectory>${project.basedir}/docs</outputDirectory>
+                    <outputDirectory>${project.basedir}</outputDirectory>
                 </configuration>
             </plugin>
 
