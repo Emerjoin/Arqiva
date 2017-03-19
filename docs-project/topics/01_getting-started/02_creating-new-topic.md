@@ -1,1 +1,0 @@
-# __Creating a new topic__
