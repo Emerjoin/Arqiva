@@ -2,8 +2,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Pratt - Free Bootstrap 3 Theme">
-    <meta name="author" content="Alvarez.is - BlackTie.co">
+    <meta name="description" content="Arqiva - awesome docs">
+    <meta name="author" content="Emerjoin">
     <link rel="shortcut icon" href="../../assets/ico/favicon.png">
 
     <title>Arqiva - Awesome docs</title>
@@ -51,9 +51,11 @@
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
                 <li class="active"><a href="#home" class="smothscroll">Home</a></li>
+                <!--
                 <li><a href="#desc" class="smothscroll">Description</a></li>
-                <li><a href="#showcase" class="smothScroll">Showcase</a></li>
-                <li><a target="_blank" href="https://github.com/talk-code/Arqiva-core" class="smothScroll">Github-Repository</a></li>
+                -->
+                <li><a href="mailto:emerjoin@gmail.com" class="smothScroll">Contribute</a></li>
+                <li><a target="_blank" href="https://github.com/Emerjoin/Arqiva" class="smothScroll">Github-Repository</a></li>
             </ul>
         </div><!--/.nav-collapse -->
     </div>
@@ -93,7 +95,17 @@
             
 
                 
-                    <a class="topic-active" href="../../topics/getting-started/creating-new-topic.html">Creating-new-topic</a>
+                    <a href="../../topics/getting-started/hello-world-topic.html">Hello-world-topic</a>
+
+                
+
+            
+        </li>
+                                        <li>
+            
+
+                
+                    <a class="topic-active" href="../../topics/getting-started/markdown-intro.html">Markdown-intro</a>
 
                 
 
@@ -108,6 +120,25 @@
                                     <a style="opacity: 0.4" href="#">Reference</a>
                 
                 <ul>
+                                        <li>
+            
+                                    <a style="opacity: 0.4" href="#">Topics-stuff</a>
+                
+                <ul>
+                                        <li>
+            
+
+                
+                    <a href="../../topics/reference/topics-stuff/rules.html">Rules</a>
+
+                
+
+            
+        </li>
+                                    </ul>
+
+            
+        </li>
                                         <li>
             
                                     <a style="opacity: 0.4" href="#">Markdown</a>
@@ -147,16 +178,96 @@
             
             <div class="topic-content col-md-12">
 
-                <h1><strong>Creating a new topic</strong></h1>
+                <h1><strong>Introducing markdown</strong></h1>
+<blockquote>
+<p>Did you know that this documentation was generated using arqiva?
+This topic you are reading was written using markdown.</p>
+</blockquote>
+<p>We wont be taking too much of your time. We will be showing you some markdown syntax tricks that you will need while writing your topic files.</p>
+<h2><strong>Basic formatting</strong></h2>
+<h3><strong>Bold</strong></h3>
+<p>Markdown code:</p>
+<pre><code class="language-md">    __Example bolded__
+</code></pre>
+<p>Html output:</p>
+<pre><code class="language-html">    &lt;b&gt;Example bolded&lt;b/&gt;
+</code></pre>
+<h3><strong>Italic</strong></h3>
+<p>Markdown code:</p>
+<pre><code class="language-markdown">    *Example italized*
+</code></pre>
+<p>Html output:</p>
+<pre><code class="language-html">    &lt;i&gt;Example italized&lt;i/&gt;
+</code></pre>
+<h2><strong>Heading</strong></h2>
+<h3><strong>Heading levels</strong></h3>
+<p>One # represents <strong>h1</strong>, two # represent <strong>h2</strong>, then, you can guess the rest.</p>
+<p>Markdown code:</p>
+<pre><code class="language-md">    # I'm a big title
+</code></pre>
+<p>Html output:</p>
+<pre><code class="language-html">    &lt;h1&gt;I'm a big title&lt;/h1&gt;
+</code></pre>
+<h2><strong>Links</strong></h2>
+<p>Markdown code:</p>
+<pre><code class="language-markdown">    [click here](http://google.co.mz)
+</code></pre>
+<p>Html output:</p>
+<pre><code class="language-html">    &lt;a href=http://google.co.mz&quot;&quot;&gt;click here&lt;/a&gt;
+</code></pre>
+<h2><strong>Images</strong></h2>
+<p>Markdown code:</p>
+<pre><code class="language-markdown">    ![Java Image](https://java.languages/logo.png &quot;Java Logo&quot;)
+</code></pre>
+<p>Html output:</p>
+<pre><code class="language-html">    &lt;img src=&quot;https://java.languages/logo.png&quot; alt=&quot;Java Image&quot; title=&quot;Java Logo&quot;/&gt;
+</code></pre>
+<h2><strong>Code syntax highlighting</strong></h2>
+<p>This markdown:</p>
+<pre><code class="language-markdown">
+         ``` java
+             public static void main(String[] args){
+                
+                  System.out.println(&quot;Hello world&quot;);
+                
+             }
+         ```
+</code></pre>
+<p>Is transformed into the following html:</p>
+<pre><code class="language-html">   
+   &lt;pre&gt;
+   
+        &lt;code class=&quot;language-java&quot;&gt;
+            
+            public static void main(String[] args){
+                        
+                 System.out.println(&quot;Hello world&quot;);
+                        
+            }
+            
+        &lt;/code&gt;
+        
+   &lt;/pre&gt;
+   
+</code></pre>
+<p>The html is then displayed like this:</p>
+<pre><code class="language-java">
+   public static void main(String[] args){
+               
+       System.out.println(&quot;Hello world&quot;);
+   }
+   
+</code></pre>
+
 
 
                 <div class="bottom-buttons">
 
-                                        <a href="../../topics/getting-started/intro.html" class="btn-direction btn-previous btn btn-default pull-left">
-                        &#8592;&nbsp; Previous</a>
+                                        <a href="../../topics/getting-started/hello-world-topic.html" class="btn-direction btn-previous btn btn-default pull-left">
+                       &#8592; &nbsp;  Previous</a>
                     
-                                        <a href="../../topics/reference/markdown/the-concept.html" class="btn-direction btn-next btn btn-default pull-right">
-                        &#8594;&nbsp; Next</a>
+                                        <a href="../../topics/reference/topics-stuff/rules.html" class="btn-direction btn-next btn btn-default pull-right">
+                        &rarr; &nbsp;  Next</a>
                     
                 </div>
 

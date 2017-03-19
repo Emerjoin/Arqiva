@@ -4,28 +4,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Arqiva - awesome docs">
     <meta name="author" content="Emerjoin">
-    <link rel="shortcut icon" href="../../../assets/ico/favicon.png">
+    <link rel="shortcut icon" href="../../assets/ico/favicon.png">
 
     <title>Arqiva - Awesome docs</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="../../../assets/css/bootstrap.css" rel="stylesheet">
+    <link href="../../assets/css/bootstrap.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="../../../assets/css/main.css" rel="stylesheet">
+    <link href="../../assets/css/main.css" rel="stylesheet">
 
     <!-- Custom arqiva styles  -->
-    <link href="../../../assets/css/arqiva.css" rel="stylesheet">
+    <link href="../../assets/css/arqiva.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
 
 
     <!--
-    <link rel="stylesheet" href="../../../assets/highlightjs/styles/railscasts.css"/>
-    <script type="text/javascript" src="../../../assets/highlightjs/highlight.pack.js"></script>-->
+    <link rel="stylesheet" href="../../assets/highlightjs/styles/railscasts.css"/>
+    <script type="text/javascript" src="../../assets/highlightjs/highlight.pack.js"></script>-->
 
-    <script src="../../../assets/js/jquery.min.js"></script>
-    <script src="../../../assets/js/smoothscroll.js"></script>
+    <script src="../../assets/js/jquery.min.js"></script>
+    <script src="../../assets/js/smoothscroll.js"></script>
 
 
     <link rel="stylesheet" href="//cdn.jsdelivr.net/highlight.js/9.10.0/styles/railscasts.min.css">
@@ -46,7 +46,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="../../../index.html"><b>Arqiva v1.0.0</b></a>
+            <a class="navbar-brand" href="../../index.html"><b>Arqiva v1.0.0</b></a>
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
@@ -85,7 +85,7 @@
             
 
                 
-                    <a href="../../../topics/getting-started/intro.html">Intro</a>
+                    <a href="../../topics/getting-started/intro.html">Intro</a>
 
                 
 
@@ -95,7 +95,7 @@
             
 
                 
-                    <a href="../../../topics/getting-started/hello-world-topic.html">Hello-world-topic</a>
+                    <a class="topic-active" href="../../topics/getting-started/hello-world-topic.html">Hello-world-topic</a>
 
                 
 
@@ -105,7 +105,7 @@
             
 
                 
-                    <a href="../../../topics/getting-started/markdown-intro.html">Markdown-intro</a>
+                    <a href="../../topics/getting-started/markdown-intro.html">Markdown-intro</a>
 
                 
 
@@ -129,7 +129,7 @@
             
 
                 
-                    <a href="../../../topics/reference/topics-stuff/rules.html">Rules</a>
+                    <a href="../../topics/reference/topics-stuff/rules.html">Rules</a>
 
                 
 
@@ -148,7 +148,7 @@
             
 
                 
-                    <a class="topic-active" href="../../../topics/reference/markdown/the-concept.html">The-concept</a>
+                    <a href="../../topics/reference/markdown/the-concept.html">The-concept</a>
 
                 
 
@@ -178,15 +178,44 @@
             
             <div class="topic-content col-md-12">
 
-                <h1><strong>The markdown concept</strong></h1>
+                <h1><strong>Creating the hello-world topic</strong></h1>
+<ol>
+<li>Create a new file under the following path:</li>
+</ol>
+<pre><code class="language-js">    docs-project/topics/02-hello-world.md
+</code></pre>
+<p>You just created a markdown file.
+If you don't know what is markdown, then, you definitely
+need to read <a href="../../topics/reference/markdown/the-concept.html"><strong>this</strong></a> before we can continue.</p>
+<ol start="2">
+<li>Now, please open the file we just created and past the following content:</li>
+</ol>
+<pre><code class="language-md">    # Say hello __world__ to *arqiva*
+</code></pre>
+<ol start="3">
+<li>Access a command line interface <strong>pointing to the directory</strong> containing your project and <strong>run the arqiva project</strong> using the following command:</li>
+</ol>
+<pre><code class="language-bash">    mvn arqiva:run
+</code></pre>
+<p>The command above tells arqiva to start it's web-server on the <strong>9610</strong> port (configurable).
+Arqiva will be serving your docs from that port in the <strong>/arqiva</strong> context path.</p>
+<ol start="4">
+<li><strong>Display your new topic in a web-browser</strong></li>
+</ol>
+<pre><code class="language-bash">    http://localhost:9610/arqiva/topics/hello-world.html
+</code></pre>
+<h2><strong>What to do next?</strong></h2>
+<p>Let us show you a few more markdown syntax tricks.</p>
 
 
 
                 <div class="bottom-buttons">
 
-                                        <a href="../../../topics/reference/topics-stuff/rules.html" class="btn-direction btn-previous btn btn-default pull-left">
+                                        <a href="../../topics/getting-started/intro.html" class="btn-direction btn-previous btn btn-default pull-left">
                        &#8592; &nbsp;  Previous</a>
                     
+                                        <a href="../../topics/getting-started/markdown-intro.html" class="btn-direction btn-next btn btn-default pull-right">
+                        &rarr; &nbsp;  Next</a>
                     
                 </div>
 
@@ -214,7 +243,7 @@
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
-<script src="../../../assets/js/bootstrap.js"></script>
+<script src="../../assets/js/bootstrap.js"></script>
 <script>
     $('.carousel').carousel({
         interval: 3500

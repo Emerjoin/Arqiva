@@ -129,7 +129,7 @@
             
 
                 
-                    <a href="../../../topics/reference/topics-stuff/rules.html">Rules</a>
+                    <a class="topic-active" href="../../../topics/reference/topics-stuff/rules.html">Rules</a>
 
                 
 
@@ -148,7 +148,7 @@
             
 
                 
-                    <a class="topic-active" href="../../../topics/reference/markdown/the-concept.html">The-concept</a>
+                    <a href="../../../topics/reference/markdown/the-concept.html">The-concept</a>
 
                 
 
@@ -178,15 +178,47 @@
             
             <div class="topic-content col-md-12">
 
-                <h1><strong>The markdown concept</strong></h1>
+                <h1><strong>Topics-rules</strong></h1>
+<p>In Arqiva, markdown files are called <strong>topics</strong>.
+Creating a topic is to create a markdown file. <em>The topics are placed under the <strong>topics</strong> directory</em>.</p>
+<p>Arqiva comes with a naming <strong>convention</strong> that must be followed while creating topic files and folders:</p>
+<ul>
+<li>The folder and file names <strong>must have two leading digits</strong> followed by an underscore character__: _</li>
+<li>The topic files <strong>must have the .md extension</strong></li>
+<li>The topic file and folder names <strong>must only have one underscore character</strong>, the underscore after the two leading digits.</li>
+</ul>
+<h2><strong>Valid topic file and folder names examples</strong></h2>
+<pre><code class="language-js">    01_hello-world.md
+    02_metting-arqiva.md
+    03_Entering-another-galaxy.md
+    04_more-topics
+    05_example-topics
+</code></pre>
+<h2><strong>Invalid topic file names examples</strong></h2>
+<pre><code class="language-js">    01_hello_world.md //multiple underscores not allowed
+    002_metting_arqiva.md //three leading zeros not allowed
+    03_Entering-another-galaxy.html //file extension must be .md
+</code></pre>
+<h2><strong>Leading-digits</strong></h2>
+<p>The two-leading digits are used to determine the position of each topic in the topics tree. That two digits are used
+to determine the topics sequence : next and previous. <strong>Make sure the numbers are showing the correct order</strong>.</p>
+<h2><strong>Web URLS</strong></h2>
+<p>This topic file:</p>
+<pre><code class="language-js">    topics/01-examples/01-first-topic.md
+</code></pre>
+<p>Will be mapped to:</p>
+<pre><code class="language-js">    topics/examples/first-topic.html
+</code></pre>
 
 
 
                 <div class="bottom-buttons">
 
-                                        <a href="../../../topics/reference/topics-stuff/rules.html" class="btn-direction btn-previous btn btn-default pull-left">
+                                        <a href="../../../topics/getting-started/markdown-intro.html" class="btn-direction btn-previous btn btn-default pull-left">
                        &#8592; &nbsp;  Previous</a>
                     
+                                        <a href="../../../topics/reference/markdown/the-concept.html" class="btn-direction btn-next btn btn-default pull-right">
+                        &rarr; &nbsp;  Next</a>
                     
                 </div>
 
