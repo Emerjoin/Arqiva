@@ -4,7 +4,7 @@ You can read the online documentation as we write by clicking [here](https://eme
 
 # Motivation to build Arqiva
 Arqiva's primary goal was to help us easily produce great documentation for [Hi-Framework](https://github.com/Emerjoin/Hi-Framework). 
-We were using [Daux.io](daux.io) which was not proving itself to be flexible and awesome enough.
+We were using [Daux.io](http://daux.io) which was not proving itself to be flexible and awesome enough.
  
 # How is Arqiva different from Daux.io
 * Its Java based
