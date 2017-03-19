@@ -21,6 +21,10 @@
                 <groupId>org.emerjoin.arqiva</groupId>
                 <artifactId>arqiva-maven-plugin</artifactId>
                 <version>1.0.0-SNAPSHOT</version>
+
+                <configuration>
+                    <outputDirectory>${project.basedir}/docs</outputDirectory>
+                </configuration>
             </plugin>
 
             <plugin>

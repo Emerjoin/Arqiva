@@ -1,19 +1,31 @@
-# Getting started
+# __Getting started__
 
-## __What is arqiva?__
+## What is arqiva?
 
-Arqiva is a tool that allows you to write awesome API documentations without much effort.
+Arqiva is an extensible tool that allows you to write awesome API documentations without much effort using Markdown and HTML together.
 
-## __Clonning the demo-project__
+
+## Requirements to get started
+
+  ![Git](../../assets/img/joined.png)
+    
+## Cloning the start-project
+The start-project is a __maven-project__ configured with the __arqiva-maven-plugin__ which starts an
+embedded web-server to display our docs in a browser as we write them. It also allows to build our project into
+static html writing only 3 words.
 ```bash
-
-    git clone 
-
+    git clone $startProjectRepo
 ```
 
 
-## __Running the project__
+## Running the project
+```bash
+    mvn arqiva:run
+```
 
 
-## __Building the project__
 
+## Open the docs in your browser
+```bash
+    http://localhost:9610/arqiva/index.html
+```

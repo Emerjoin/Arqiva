@@ -1,10 +1,85 @@
-<div class="topic">
+
+<div class="topic-row col-md-12">
+
+    <div id="topics-tree" class="col-md-3">
+
+        <h4 style="opacity: 0.4"><b>Topics</b></h4>
+
+        <!--Velocity macro definition begins here-->
+        #macro( topicsTree $treeNode )
+
+            #if ( $treeNode.isDirectory() )
+
+                #if ( $treeNode.hasParent() )
+                    <a style="opacity: 0.4" href="#">$treeNode.getDisplayName()</a>
+                #end
+
+                <ul>
+                    #foreach( $topicNode in $treeNode.getChilds() )
+                    <li>#topicsTree( $topicNode )</li>
+                    #end
+                </ul>
+
+            #else
 
 
-    <div class="topic-content">
+                #if( $treeNode.matchTopic($topic) )
 
-        <!--@content-->
+                    <a class="topic-active" href="topics/$treeNode.getRef().getHtmlUrl()">$treeNode.getDisplayName()</a>
+
+                #else
+
+                    <a href="topics/$treeNode.getRef().getHtmlUrl()">$treeNode.getDisplayName()</a>
+
+                #end
+
+
+            #end
+
+        #end
+        <!--/Velocity macro definition ends here-->
+
+        #set( $node = $tree.getRootNode() )
+
+        <ul>
+            <li>#topicsTree( $node )</li>
+        </ul>
 
     </div>
 
+    <div id="topic-content-div" class="col-md-9">
+
+
+        <div class="topic col-md-10">
+
+            #set ( $topicNode = $topic.getTreeNode() )
+
+            <div class="topic-content col-md-12">
+
+                <!--@content-->
+
+                <div class="bottom-buttons">
+
+                    #if( $topicNode.hasPrevious() || $topicNode.hasTopicInTheLead() )
+                    <a href="topics/$topicNode.previousTopic().getRef().getHtmlUrl()" class="btn-direction btn-previous btn btn-default pull-left">
+                        &#8592;&nbsp; Previous</a>
+                    #end
+
+                    #if( $topicNode.hasNext() || $topicNode.hasTopicAhead() )
+                    <a href="topics/$topicNode.nextTopic().getRef().getHtmlUrl()" class="btn-direction btn-next btn btn-default pull-right">
+                        &#8594;&nbsp; Next</a>
+                    #end
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
 </div>
+
