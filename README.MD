@@ -32,7 +32,8 @@ This artifact consists of the maven plugin used to run and build arqiva projects
 The source code of this artifact is located at [https://github.com/talk-code/Arqiva-mojo](https://github.com/talk-code/Arqiva-mojo).
 
 ## Arqiva-basic
-This artifact consists of the arqiva-basic module, which integrates [Apache Velocity](http://velocity.apache.org/) and the Java implementation of [CommonMark](https://github.com/atlassian/commonmark-java) by atlassian
+This artifact consists of the __arqiva-basic__ module. It's module that integrates [Apache Velocity](http://velocity.apache.org/) and the Java implementation of [CommonMark](https://github.com/atlassian/commonmark-java) by atlassian
+into the Arqiva's ecosystem.
 The source code of this artifact is located at [https://github.com/talk-code/Arqiva-mojo](https://github.com/talk-code/Arqiva-mojo).
 
 
