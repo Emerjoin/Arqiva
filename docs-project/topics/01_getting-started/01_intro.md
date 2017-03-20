@@ -9,7 +9,7 @@ Arqiva is an extensible java based tool that allows you to write awesome API doc
 
   ![Git](../../assets/img/joined.png)
     
-  <small><b>Java 8 + Git + Maven 3.3.x</b></small>  
+ <small><b>Java 8 + Git + Maven 3.3.x</b></small>  
     
 ## Clone the start-project
 The start-project is a __maven-project__ configured with the __arqiva-maven-plugin__ which starts an
