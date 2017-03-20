@@ -7,7 +7,7 @@ Creating a topic is to create a markdown file. *The topics are placed under the 
 Arqiva comes with a naming __convention__ that must be followed while creating topic files and folders:
 
 
-* The folder and file names __must have two leading digits__ followed by an underscore character__: _
+* The folder and file names __must have two leading digits__ followed by an underscore character: _
 * The topic files __must have the .md extension__
 * The topic file and folder names __must only have one underscore character__, the underscore after the two leading digits.
 
