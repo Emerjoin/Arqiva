@@ -9,6 +9,8 @@ Arqiva is an extensible java based tool that allows you to write awesome API doc
 
   ![Git](../../assets/img/joined.png)
     
+  <small><b>Java 8 + Git + Maven 3.3.x</b></small>  
+    
 ## Clone the start-project
 The start-project is a __maven-project__ configured with the __arqiva-maven-plugin__ which starts an
 embedded web-server to display our docs in a browser as we write them. It also allows to build our project into
@@ -29,7 +31,7 @@ static html writing only 3 words.
 ```
 
 
-## Display the index page from your web-browser
+## Display the index page on your favorite web-browser
 ```bash
     http://localhost:9610/arqiva/index.html
 ```
