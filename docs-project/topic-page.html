@@ -25,11 +25,11 @@
 
                 #if( $treeNode.matchTopic($topic) )
 
-                    <a class="topic-active" href="topics/$treeNode.getRef().getHtmlUrl()">$treeNode.getDisplayName()</a>
+                    <a class="topic-active" href="$treeNode.getRef().getHtmlUrl()">$treeNode.getDisplayName()</a>
 
                 #else
 
-                    <a href="topics/$treeNode.getRef().getHtmlUrl()">$treeNode.getDisplayName()</a>
+                    <a href="$treeNode.getRef().getHtmlUrl()">$treeNode.getDisplayName()</a>
 
                 #end
 
@@ -62,12 +62,12 @@
                 <div class="bottom-buttons">
 
                     #if( $topicNode.hasPrevious() || $topicNode.hasTopicInTheLead() )
-                    <a href="topics/$topicNode.previousTopic().getRef().getHtmlUrl()" class="btn-direction btn-previous btn btn-default pull-left">
+                    <a href="$topicNode.previousTopic().getRef().getHtmlUrl()" class="btn-direction btn-previous btn btn-default pull-left">
                        #[[&#8592;]]# &nbsp;  Previous</a>
                     #end
 
                     #if( $topicNode.hasNext() || $topicNode.hasTopicAhead() )
-                    <a href="topics/$topicNode.nextTopic().getRef().getHtmlUrl()" class="btn-direction btn-next btn btn-default pull-right">
+                    <a href="$topicNode.nextTopic().getRef().getHtmlUrl()" class="btn-direction btn-next btn btn-default pull-right">
                         #[[&rarr; &nbsp;  Next]]#</a>
                     #end
 
