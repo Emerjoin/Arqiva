@@ -22,6 +22,7 @@ you will be able to find arqiva's artifacts source-code.
 ## Arqiva-core
 The core of arqiva. Implements the core concepts: project, context, topic files, topic tree, modules (extensibility), hooks.
 The source code of this artifact is located at [https://github.com/talk-code/Arqiva-core](https://github.com/talk-code/Arqiva-core).
+__Java docs__ can be found [here](https://emerjoin.github.io/Arqiva-core/).
 
 ## Arqiva-web
 This artifact provides the infrastructure to render arqiva docs from a java web-container.
