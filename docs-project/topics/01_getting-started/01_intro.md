@@ -23,6 +23,10 @@ static html writing only 3 words.
     mvn arqiva:run
 ```
 
+### Wait for the folowing log to appear on your command line:
+```bash
+    INFO: Starting ProtocolHandler ["http-nio-9610"]
+```
 
 
 ## Display the index page from your web-browser
