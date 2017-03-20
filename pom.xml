@@ -48,7 +48,7 @@
         <!--Arqiva's basic module that integrates CommonMark and Apache velocity into the arqiva ecosystem-->
         <dependency>
             <groupId>org.emerjoin.arqiva</groupId>
-            <artifactId>basic-profile</artifactId>
+            <artifactId>arqiva-basic</artifactId>
             <version>1.0.0-SNAPSHOT</version>
         </dependency>
 
